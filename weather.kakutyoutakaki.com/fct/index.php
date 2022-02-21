@@ -243,6 +243,6 @@ for(var i=0;i<t_name.length;i++){
 }
 
   </script>
-  samplesamplesamplesamplesamplesample
+  
 </body>
 </html>
