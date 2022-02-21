@@ -1,0 +1,695 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+/****************************************
+
+    /* CSS Reset
+
+*****************************************/
+
+html, body, div, span, object, iframe,
+h1, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+h2, strong, header {
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+    content: none;
+}
+
+a {
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+ins {
+    color: #000;
+    text-decoration: none;
+    background-color: #ff9;
+}
+
+mark {
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+    background-color: #ff9;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select, textarea, img, th, td {
+    vertical-align: middle;
+}
+
+ul, dl, ol {
+    list-style: none;
+}
+
+/****************************************
+
+    /* 共通設定
+
+*****************************************/
+
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-appearance: none;
+            appearance: none;
+}
+
+body {
+    font-family: Meiryo, sans-serif;
+    font-size: 36px;
+    color: #111;
+    line-height: 1.4;
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+}
+
+@media screen and (min-width: 800px) {
+
+    html {
+        background: #fff;
+    }
+
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+}
+
+h1, h2, h3, h4, h5, h6, th {
+    font-weight: normal;
+}
+
+a {
+    color: #333;
+    text-decoration: underline;
+    transition-duration: .3s;
+}
+
+a:hover {
+    text-decoration: none;
+    transition-duration: .3s;
+}
+
+a:hover img {
+    -moz-opacity: .5;
+    opacity: .5;
+    transition-duration: .3s;
+}
+
+img, video, object {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    border: none;
+    transition-duration: .3s;
+}
+
+/****************************************
+
+    /*
+
+*****************************************/
+
+header {
+    width: 800px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    background-size: cover;
+    padding: 30px 0px 0px 0px;
+}
+
+/****************************************
+
+    /*
+
+*****************************************/
+
+#content {
+    background: #ffffff;
+    background-image: radial-gradient(#fff 20%, transparent 0), radial-gradient(#fff 20%, transparent 0);
+    background-position: 0 0, 5px 5px;
+    background-size: 10px 10px;
+    padding: 0px 30px 30px 30px;
+}
+
+/****************************************
+
+    /*
+
+*****************************************/
+
+.slider {
+    width: 740px;
+    overflow: hidden;
+}
+
+.slider ul {
+    overflow: hidden;
+}
+
+.slider li {
+    float: left;
+    width: 740px;
+    list-style: none;
+}
+
+.slider li table {
+    width: 100%;
+}
+
+.slider li table th,
+.slider li table td {
+    vertical-align: middle;
+}
+
+.slider li table th {
+    width: 240px;
+}
+
+.slider li table td{
+    width: 500px;
+    font-weight: 600;
+    padding: 0 0 0 20px;
+    text-align: center;
+}
+
+.slider li table td span {
+    font-size: 24px;
+}
+
+.slider li .formParts {
+    border: 4px solid #000;
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.slider li.step_01 .formParts dl dt,
+.slider li.step_02 .formParts dl dt,
+.slider li.step_03 .formParts dl dt {
+    display: none;
+}
+
+.slider li .formParts .flex {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.slider li .formParts .flex p {
+    width: 100%;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    background-color: #f92;
+    background: linear-gradient(#FAA3A3, #FAA3A3);
+    margin: 0 0 10px;
+    padding: 30px 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 0 #F94C6D;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    color: #FFFFFF;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+.step_04 p {
+    font-weight: 600;
+    margin: 0 0 40px;
+}
+
+.step_04 p.disc {
+    font-size: 90%;
+}
+
+
+.step_04 .formSingle {
+    margin: 20px 0;
+}
+
+.step_04 .formSingle dl dt {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+
+.step_04 .formSingle dl dt i {
+    font-size: 18px;
+}
+
+form dl dt span {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 10px 0 0;
+    padding: 5px 10px;
+    border-radius: 3px;
+    position: relative;
+    top: -5px;
+}
+
+form dl dt span.must {
+    background: #e44;
+}
+
+form dl dt span.any {
+    background: #aaa;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    font-family: Meiryo, sans-serif;
+    font-size: 40px;
+    border: 2px solid #ddd;
+    padding: 4px 10px;
+    outline: none;
+}
+
+form textarea {
+    height: 120px;
+}
+
+form select {
+    min-height: 45px;
+    background: url("images/form-select.png") no-repeat right center #fff;
+    background-size: 50px 35px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.slidePrev {
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+    background: none;
+    margin: 30px 0 0;
+}
+
+button.slidePrev:before {
+    font-family: FontAwesome;
+    content: "\f190";
+    font-weight: 400;
+    margin: 0 .5em 0 0;
+}
+
+
+form .submitWrap {
+    text-align: center;
+    padding: 10px 0 15px;
+}
+
+form button[type="submit"] {
+    display: inline-block;
+    width: 320px;
+    color: #fff;
+    font-family: Meiryo, sans-serif;
+    font-size: 34px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background-color: #2a3;
+    background: -webkit-gradient(linear, center top, center bottom, from(#0a0), to(#080));
+    background: linear-gradient(to bottom, #0a0, #080);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#00aa00', endColorstr='#008800');
+    padding: 20px;
+    position: relative;
+    top: 0;
+    border-radius: 5px;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+    box-shadow: 0 5px 0 #060;
+    -webkit-transition-duration:0.3s;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+form button[type="submit"]::after {
+    display: block;
+    content: "";
+    width: 8px;
+    height: 8px;
+    margin-top: -5px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition-duration:0.3s;
+    transition-duration: 0.3s;
+}
+
+form button[type="submit"]:hover {
+    top: 5px;
+    box-shadow: 0 0 0 #060;
+}
+
+form button[type="submit"]:hover::after {
+    right: 10px;
+}
+
+form dl dd span.error {
+    display: inline-block;
+    color: #e44;
+    font-size: 18px;
+    margin: -5px 0 0;
+}
+
+/****************************************
+
+    /*
+
+*****************************************/
+
+#link {
+    width: 800px;
+    font-size: 24px;
+    background: #FA4C6D;
+    background-size: cover;
+}
+
+#link ul {
+    display: flex;
+    padding: 30px 10px;
+}
+
+#link ul li {
+    flex: 1;
+    padding: 10px;
+}
+
+#link ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 20px;
+}
+
+/****************************************
+
+    /*
+
+*****************************************/
+
+footer {
+    width: 800px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    background: #111;
+    padding: 40px;
+}
+
+/****************************************
+
+    /*
+
+*****************************************/
+
+#sub {
+    font-size: 20px;
+    background: #e5e8ee;
+    padding: 60px 30px;
+}
+
+#sub h2 {
+    color: #025;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 1em 0;
+}
+
+.thanks h2 {
+    text-align: center;
+}
+
+#sub h3 {
+    color: #025;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 1em 0;
+}
+
+#sub h4 {
+    font-weight: 600;
+}
+
+#sub h3:before {
+    font-family: FontAwesome;
+    content: "\f00c";
+    font-weight: 400;
+    margin: 0 .5em 0 0;
+}
+
+#sub p {
+    margin: 1em 0;
+}
+
+.thanks img {
+    display: block;
+    width: 600px;
+    margin: 40px auto 0;
+}
+
+#sub dl {
+    margin: 1em 0;
+}
+
+#sub dl dt {
+    color: #025;
+    font-size: 24px;
+    font-weight: 600;
+    background: #ccd3dd;
+    margin: 1em 0;
+    padding: .5em;
+}
+
+#sub ul {
+    list-style: circle;
+    margin: 1em 0 1em 1.5em;
+}
+
+
+::-webkit-input-placeholder {
+    color:#ccc;
+}
+
+:-moz-placeholder {
+    color:#ccc;
+}
+
+/****************************************
+
+    /*
+
+*****************************************/
+
+#title1 {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 1000;
+    background: #FA4C6D;
+}
+
+#title2 {
+    color: #FA4C6D;
+    font-size: 28px;
+    font-weight: 1000;
+    text-decoration: underline;
+}
+
+#title3 {
+    color: #333333;
+    font-size: 52px;
+    font-weight: 1000;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#title4 {
+    color: rgb(80, 83, 87);
+    font-size: 16px;
+    font-weight: 200;
+}
+
+#title5 {
+    color: #FA4C6D;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.center{
+    text-align: center;
+    line-height:16px;
+  }
+
+  .possibility {
+    width: 90%;
+    background-color: #FFFBBF;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.title-red {
+    font-size: 36px;
+    color: #DE2C44;
+    font-weight: 700;
+    text-align: center;
+}
+
+.title-red2 {
+    font-size: 64px;
+    color: #DE2C44;
+    font-weight: 700;
+    text-align: center;
+}
+
+.subtext {
+    font-size: 32px;
+    line-height: 24px!important;
+}
+
+  .title-1{
+    font-size: 34px!important;
+    color: #585858;
+    font-weight: 700;
+    text-align: center;
+    font: inherit;
+}
+
+.title-2{
+    font-size: 64px!important;
+    color: #FA4C6D;
+    font-weight: 700;
+    text-align: center;
+    font: inherit;
+}
+
+.title-3{
+    font-size: 58px!important;
+    color: #333333;
+    font-weight: 700;
+    text-align: center;
+    font: inherit;
+}
+
+
+.shousai {
+    width: 100%!important;
+    text-align: center!important;
+    margin: 0 auto!important;
+    padding: 0px!important;
+}
+
+.center img { 
+    width: 100%; 
+}
+
+.cardsetsumei {
+    width: 800px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    background-size: cover;
+    padding: 30px 0px 0px 0px;
+}
+
+.dokidoki {
+    animation: dokidoki 1.5s infinite;
+}
+@keyframes dokidoki {
+    0% {
+        transform: scale(1.05)
+    }
+    5% {
+        transform: scale(1)
+    }
+    95% {
+        transform: scale(1)
+    }
+    100% {
+        -webkit-transform: scale(1.05)
+    }
+}
