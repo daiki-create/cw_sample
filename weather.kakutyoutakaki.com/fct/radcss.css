@@ -1,0 +1,46 @@
+#maps_contena{
+    white-space: nowrap;
+}
+.nowrap{
+    white-space: nowrap;
+    margin: 0;
+}
+#map_contena,#map_contena_fct{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 400px;
+    height: 360px;
+    display: inline-block;
+}
+#time_contena,#time_contena_fct{
+    background-color: rgba(231, 227, 221, 0.8);
+    position: relative;
+    top : 0;
+    right:  0;
+    z-index: 5;  
+    width: min-content;  
+}
+#time,#time_fct{
+    font-size: 20px;
+    width: max-content;
+}
+.rad_ex{
+    position: absolute;
+    bottom: 20px;
+    right:25px;
+    z-index: 50;
+    width: 35px;
+    height: 200px;
+    opacity: 0.8;    
+}
+#map_id,#map_id_fct{
+    position: absolute;
+    top : 0;
+    left: 0;
+    z-index: 1;
+    width: 330px;
+    height: 350px;
+    border: solid 1px;
+}

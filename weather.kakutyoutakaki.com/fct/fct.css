@@ -1,0 +1,382 @@
+#ken_select{
+    font-size: 25px;
+}
+#city_select{
+    min-width: 300px;
+    font-size: 25px;
+}
+.selectcontena{
+    width: 500px;
+}
+.selectcontena select{
+    display: inline-block;
+}
+body{
+    font-size: 30px;
+}
+input{
+    font-size :20px;
+}
+#windy{
+    width: 100%;
+    height : 700px;
+}
+.windy_tile{
+    width: 100%;
+    border: 1px solid #202dCf ;
+    /* max-width: 900px; */
+}
+/*ã‚¿ã‚¤ãƒˆãƒ«ï¼šï¼šãƒŸã‚·ãƒ³ç›®ã€ä»˜ç®‹ã‚¿ã‚¤ãƒ—*/
+h1,.title {
+   position: relative;
+   padding: 0.2em 0.5em;
+   background: -webkit-linear-gradient(to right, rgb(11, 24, 255), #a994ff);
+   background: linear-gradient(to right, rgb(11, 24, 255), #a994ff);
+   color: white;
+   font-weight: lighter;
+   font-size: 35px;/*æ–‡å­—ã‚µã‚¤ã‚º*/
+   box-shadow: 0 0 4px rgba(0, 0, 0, 0.56);
+   min-width : 600px;
+   max-width : 900px;
+   width : 98%;
+   margin :0;
+   margin-bottom: 3px;
+   white-space: nowrap;
+   font-weight: 1200;
+ }
+ .fct_h3{
+    background: -webkit-linear-gradient(to right, rgb(11, 24, 255), #a994ff);
+    background: linear-gradient(to right, rgb(11, 24, 255), #a994ff);
+    color: white;
+    font-weight: lighter;
+    font-size: 32px;/*æ–‡å­—ã‚µã‚¤ã‚º*/
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.56);
+    min-width : 600px;
+    max-width : 900px;
+    width : 100%;
+    margin :0;
+    margin-bottom: 3px;
+    white-space: nowrap;
+    font-weight: 1200;
+
+ }
+ /*äºˆå ±å…¨ä½“ã®èƒŒæ™¯*/
+ div.aera_tile{
+      /*display: inline-block;*/
+      border: solid 2px #202dCf;
+      background: #FAFFFF;
+      margin :0 0 0 3px;
+      min-width : 600px;
+      max-width : 900px; 
+      width : 100%;
+ 
+      /*height : 400px;*/
+ }
+ /*äºˆå ±ã®å…¥ã‚Œç‰©*/
+ h2.fct_day{
+      width :100%;
+      display: inline-block;
+      position: relative;
+      height: 60px;/*é«˜ã•*/
+      line-height: 60px;/*é«˜ã•*/
+      text-align: center;
+      padding: 0px 40px 3px 18px;/*æ–‡å­—ã®å·¦å³ã®ä½™ç™½*/
+      font-size: 35px;/*æ–‡å­—ã‚µã‚¤ã‚º*/
+      background: #8648ff;/*èƒŒæ™¯è‰²*/
+      color: #FFF;/*æ–‡å­—è‰²*/
+      box-sizing: border-box;
+      margin: 0;
+      border-radius: 7px;
+
+ }
+ div.fct_timedif{
+      margin : 5px;
+      margin-top :15px; 
+      margin-left : 10px;
+      background: #FAFAFF;
+      box-shadow: 1px 1px 5px 1px #999;
+      border-radius:5px;
+ }
+ div.fct{
+      display :inline-block;
+      height : 100%;/*äºˆå ±æž ã®é«˜ã•ã¯å›ºå®š*/
+      /*width : 280px;*/
+      width: fit-content;
+      background: #FAFAFF;
+      word-wrap: break-word;
+      /*fct_timedifã®ã•ã‚‰ã«ä¸­*/
+      font-size: 13px;/*æ–‡å­—ã‚µã‚¤ã‚º*/
+      float : left;
+      /*border : 2px solid #A0A0A0;*/
+      margin-left : 1px;
+ }
+ 
+ div.fct img {
+      max-width : 80px;
+      max-height : 80px;
+ }
+ div.nowrap{
+      /*white-space: nowrap;*/
+      width : 100%;
+      height : 150px;
+      margin-left : 1px;
+      padding : 1px;
+ }
+ span.main_fct{
+      background: linear-gradient(transparent 60%, #5bed3b 0%);
+      /*white-space: nowrap;*/
+      margin : 2px;
+ }
+ /*äºˆå ±æ™‚ç³»åˆ—*/
+ table.tenki_table{
+   border-collapse: separate; /*collapse;*/
+   border: solid 1px #000000;
+   width : 98%;
+   margin-left: 2px;
+   font-size: 20px;
+ }
+ table.tenki_table tr{
+   border-bottom: solid 2px white;
+ }
+ table.tenki_table tr:last-child{
+   border-bottom: none;
+ }
+ table.tenki_table td{
+   position: relative;
+   text-align: center;
+   max-width: 10px;
+   /*background-color: #52c2d0;*/
+   color: #505050;
+   text-align: center;
+   padding: 10px 0;
+   border-right: 0.5px solid #E0E0E0;
+ }
+ 
+ table.tenki_table th{
+      text-align: center;
+      max-width : 10px;
+      font-size : 18px;
+ }
+ table.tenki_table th.tenkitable_day{
+      border-right: 0.5px solid #E0E0E0;
+ }
+ table.tenki_table td img{
+      max-width : 30px;
+ }
+ /*æ°—æ¸©*/
+ div.tem_maxmin{
+      display :inline-block;
+      width : 90px;
+      /*min-height: 100px;*/
+      /*height : 120px;*/
+      height: fit-content;
+      /*border : 2px solid #A0A0A0;*/
+      background: #FAFAFF;
+      margin : 1px;
+      /*fct_timedifã®ã•ã‚‰ã«ä¸­*/
+ }
+ div.max_tem{
+      font-size : 32px;
+      color : red;
+      font-weight: 800;
+      float : right;
+      text-align : center;
+      margin : 0;
+ }
+ div.min_tem{
+      margin :0;
+      padding :0;
+      font-size : 32px;
+      color : blue;
+      font-weight: 800;
+      text-align : center;
+ }
+ p.max{
+      margin :0;
+      padding :0;
+      font-size : 12px;
+      color : red;
+ }
+ p.min{
+      margin :0;
+      padding :0;
+      font-size : 12px;
+      color : blue;
+      
+ }
+ div.fct img{
+      width :80px;
+      height:80px;
+ } 
+ 
+ div.fct p.text_min img{
+      width :25px;
+      height:22px;
+ }
+ 
+ /*æ°—æ¸©æ™‚ç³»åˆ—*/
+ .canvas-container {
+     position: relative;
+     width:  calc(100% - 40px);
+     height: 220px;
+     overflow: hidden;
+     margin:20px;
+ }
+ 
+ 
+ /*é™æ°´ç¢ºçŽ‡*/
+ table.plob{
+   width: 100%;
+   margin :0;
+   border-collapse: collapse;
+   font-size: 22px;
+ }
+ 
+ table.plob tr{
+   background-image: linear-gradient(40deg, #e043fc 0%, #4F4Ffb 64%);
+ }
+ 
+ table.plob tr:last-child *{
+   border-bottom: none;
+ }
+ 
+ table.plob th,table td{
+   text-align: center;
+   border: solid 2px #fff;
+   color: white;
+   padding: 2px 0;
+ }
+ p.text_min{
+      font-size:14px;
+      word-wrap: break-word;
+ }
+ div.week_fct{
+      display : inline-block;
+ }
+ .week_table{
+      width :400px;
+      border-collapse: collapse;
+      text-align: left;
+      line-height: 1.5;
+      border: 1px solid #ccc;
+      margin :2px;
+      min-width : 600px;
+      max-width : 900px; 
+      width : 100%;
+ 
+ }
+ .week_table th{
+      font-weight: bold;
+      border: 1px solid #A0A0A0;
+      background: -webkit-linear-gradient(to right, rgb(11, 24, 255), #7974ff);
+      background: linear-gradient(to right, rgb(81, 84, 255), #3934ff);
+      color: #ffffff;
+ }
+ .week_table tr td{
+      color :black;
+      border: 1px solid #A0A0A0;
+ }
+ .week_table tr td img{
+      min-width : 20px;
+      min-height : 20px;
+      max-width : 30px;
+      max-height : 30px;
+ }
+ .week_table td {
+      width : 40px;
+      font-weight: 600;
+ }
+ .week_table td.w_td {
+      font-size : 10px;
+ }
+ table.week_table th.week_title{
+      width : 40px;
+      padding: 10px;
+ } 
+ table.week_table .w_max{
+     color : red; 
+ }
+ table.week_table .w_min{
+     color : blue; 
+ }
+ /*1ãƒ¶æœˆäºˆå ±*/
+ .mf_bar{
+    border: solid 5px;
+ }
+ .low{
+      border: solid 5px black;
+      background-color: #202dCf;
+      color :white;
+ }
+ .nomal{
+    border: solid 5px black;
+    background-color: #FFFF00;
+}
+.hight{
+    border: solid 5px black;
+    background-color: #FF0000;
+    color :white;
+}
+.mf_contena{
+    display: inline-block;
+    width : 70%;
+}
+.mf_contena span{
+    display: inline-block;
+}
+.expl{
+    display: inline-block;
+    width:25%;
+}
+.wd10{
+    width : 10%;
+}
+.wd20{
+    width : 20%;
+}
+.wd30{
+    width : 30%;
+}
+.wd40{
+    width : 40%;
+}
+.wd50{
+    width : 50%;
+}
+.wd60{
+    width : 60%;
+}
+.wd70{
+    width : 70%;
+}
+.wd80{
+    width : 80%;
+}
+.wd90{
+    width : 90%;
+}
+.nobr{
+    width:100%;
+    max-width: 900px;
+    white-space: nowrap
+}
+
+/* yamazaki */
+body {
+     width: 900px;
+     margin: auto;
+}
+.bread {
+     font-size: 3rem;
+}
+@media screen and (max-width:900px) {
+     body {
+          max-width: 100%;
+          margin: 0 !important;
+     }
+}
+@media screen and (max-width:600px) {
+     .bread {
+          font-size: 1rem;
+     }
+}
