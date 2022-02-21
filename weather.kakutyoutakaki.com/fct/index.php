@@ -2,10 +2,10 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<title>最新の天気予報（気象庁の天気予報）</title>
+<title>sample</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="Keywords" content="気象庁,天気予報," />
-<meta name="Description" content="気象庁の最新の天気予報や気象データを見やすく配信" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
 <link rel="icon" href="https://weather.kakutyoutakaki.com/images/favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" type="img/x-icon" href="https://weather.kakutyoutakaki.com/images/favicon.ico" />
 <link rel = "stylesheet" href = "radcss.css" />
@@ -51,7 +51,7 @@
 <div id="karatop"></div>
 <a href="../index.html">ホーム</a>
 <div class="blead">
->>最新！気象庁発表の天気予報 >>東京都
+>>sample >> sample
 </div>
 <script>
     //cookie 保存
@@ -243,9 +243,6 @@ for(var i=0;i<t_name.length;i++){
 }
 
   </script>
-  ※位置情報の取得について<br>
- 　当ページでの位置情報の取得は、当ページでの適切な天気予報表示のサポートで使用しているだけでその他の用途では使用されません。
- 　安心してご利用ください。
-
+  samplesamplesamplesamplesamplesample
 </body>
 </html>
